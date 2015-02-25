@@ -1,6 +1,7 @@
 # Torero
 
-TODO: Write a gem description
+![OLE!](http://i01.i.aliimg.com/photo/v0/113331407/Oil_painting_of_bullfighter.jpg)
+Lets the strong params right though
 
 ## Installation
 
