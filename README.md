@@ -1,6 +1,6 @@
 # Torero
 
-![OLE!](http://i01.i.aliimg.com/photo/v0/113331407/Oil_painting_of_bullfighter.jpg)
+![OLE!](http://www.canvaz.com/matador/matador-01.jpg)
 Lets the strong params right though
 
 ## Installation
