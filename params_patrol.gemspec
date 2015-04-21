@@ -6,10 +6,10 @@ require 'params_patrol/version'
 Gem::Specification.new do |spec|
   spec.name          = "params-patrol"
   spec.version       = ParamsPatrol::VERSION
-  spec.authors       = ["Will Bendix"]
-  spec.email         = ["willb@indiegogo.com"]
-  spec.summary       = %q{TODO: Write a short summary. Required.}
-  spec.description   = %q{TODO: Write a longer description. Optional.}
+  spec.authors       = ["Will Bendix", "Blaine Gilbreth"]
+  spec.email         = %w(wcbendix@gmail.com bgilb@seas.upenn.edu)
+  spec.summary       = %q{Keeps an eye out for suspicious parameters... and then calls for backup}
+  spec.description   = %q{Use whatever monitor service you would like to track strong parameter errors.}
   spec.homepage      = ""
   spec.license       = "MIT"
 
