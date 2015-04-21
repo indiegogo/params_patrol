@@ -1,11 +1,11 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'torero/version'
+require 'params_patrol/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "torero"
-  spec.version       = Torero::VERSION
+  spec.name          = "params-patrol"
+  spec.version       = ParamsPatrol::VERSION
   spec.authors       = ["Will Bendix"]
   spec.email         = ["willb@indiegogo.com"]
   spec.summary       = %q{TODO: Write a short summary. Required.}
