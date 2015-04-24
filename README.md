@@ -22,7 +22,28 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Builds off of `strong_parameters` (https://github.com/rails/strong_parameters) and is a required dependency. To use `ParamsPatrol` in your rails 3 app,
+
+At the model level include
+
+`include ActiveModel::SuppressForbiddenAttributes`
+
+and at the controller level include
+
+`include ActionController::HandleUnpermittedParameters`
+
+Also strong parameters needs to be set to raise an exception on unpermitted parameters which can be set in `config/application.rb` here,
+
+`config.action_controller.action_on_unpermitted_parameters = :raise`
+
+Once this is set up, unpermitted parameters are logged by default. You can specify how you want to handle unpermitted parameters by defining a handler in `ParamsPatrol` like:
+
+```ruby
+ParamsPatrol.handle= lambda { |x| Logger.new(STDOUT).warn(x) }
+```
+
+in a initializer file.
+
 
 ## Contributing
 
