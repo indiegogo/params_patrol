@@ -26,15 +26,21 @@ Builds off of `strong_parameters` (https://github.com/rails/strong_parameters) a
 
 At the model level include
 
-`include ActiveModel::SuppressForbiddenAttributes`
+```ruby
+include ActiveModel::SuppressForbiddenAttributes
+```
 
 and at the controller level include
 
-`include ActionController::HandleUnpermittedParameters`
+```ruby
+include ActionController::HandleUnpermittedParameters`
+```
 
 Also strong parameters needs to be set to raise an exception on unpermitted parameters which can be set in `config/application.rb` here,
 
-`config.action_controller.action_on_unpermitted_parameters = :raise`
+```ruby
+config.action_controller.action_on_unpermitted_parameters = :raise
+```
 
 Once this is set up, unpermitted parameters are logged by default. You can specify how you want to handle unpermitted parameters by defining a handler in `ParamsPatrol` like:
 
@@ -42,8 +48,20 @@ Once this is set up, unpermitted parameters are logged by default. You can speci
 ParamsPatrol.handle= lambda { |x| Logger.new(STDOUT).warn(x) }
 ```
 
-in a initializer file.
+in an initializer file.
 
+
+## Contributors
+
+- @npj
+- kelly@indiegogo.com
+- @indiebendix
+- jenmei@indiegogo.com
+- @aarongogo
+- @gogojared
+- @jcareyigg
+- @indieblaine
+- and others
 
 ## Contributing
 
