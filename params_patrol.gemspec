@@ -22,9 +22,9 @@ Gem::Specification.new do |spec|
   spec.add_dependency "actionpack", "~> 3.0"
   spec.add_dependency "activemodel", "~> 3.0"
   spec.add_dependency "railties", "~> 3.0"
-  spec.add_dependency "strong_parameters"
+  spec.add_dependency "strong_parameters", "~> 0.2.3"
 
   spec.add_development_dependency "bundler", "~> 1.7"
   spec.add_development_dependency "rake", "~> 10.0"
-  spec.add_development_dependency "mocha"
+  spec.add_development_dependency "mocha", "~> 1.1.0"
 end
