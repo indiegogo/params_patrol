@@ -54,7 +54,7 @@ in an initializer file.
 ## Contributors
 
 - @npj
-- kelly@indiegogo.com
+- @kellyfelkins
 - @indiebendix
 - jenmei@indiegogo.com
 - @aarongogo
